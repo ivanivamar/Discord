@@ -352,6 +352,7 @@ textarea:disabled, textarea:disabled:hover {
     margin: 0 20px;
     padding: 16px 10px;
 }
+.chat .divider:before { content: unset; }
 .theme-dark #friends .friends-table .friends-row:hover {
     background: #2D2D2E;
 }
