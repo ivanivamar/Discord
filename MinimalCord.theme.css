@@ -755,3 +755,21 @@ textarea:disabled, textarea:disabled:hover {
     flex-direction: column;
     overflow: hidden;
 }
+
+.embedPill-3sYS1X {
+    -ms-flex-negative: 0;
+    background-color: #292D31;
+    border-radius: 0;
+    flex-shrink: 0;
+    width: 4px;
+}
+.embedInner-t4ag7g {
+    -webkit-box-sizing: border-box;
+    background: hsla(0,0%,98%,.3);
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 8px 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
