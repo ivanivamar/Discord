@@ -16,9 +16,6 @@
 
     --titlebar-color: #202020;
     --titlebar-color-darken: #202020;
-    --titlebar-color-alt: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom,#201d2e 0, #121016 100%);
-    --titlebar-color-alt2: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom, #121016 0, #201d2e 100%);
-    
     --top-nav-color: #202020;
 
     --links-color: #3191D9;
