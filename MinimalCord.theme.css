@@ -773,3 +773,14 @@ textarea:disabled, textarea:disabled:hover {
     padding: 8px 10px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
+.unread-23Kvxk {
+    background-color: #5873DC;
+    border-radius: 0;
+    height: 16px;
+    left: 0;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 4px;
+    box-shadow: 0 0 10px #5873DC;
+}
