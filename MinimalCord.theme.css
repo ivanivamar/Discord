@@ -1,0 +1,760 @@
+//META{"name":"MinimalCord","description":"Minimal design of discord","author":"Kast","version":"1.0"}*//
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+:root {
+    --version: "MinimalCord v1.0";
+
+    --theme-notice: 'Congratulations, you have successfully installed and enabled the MinimalCord theme!\A\A';
+    
+    --dark-modal-bg: #202020;
+
+    --chat-color: #29292A;
+    
+    --channels-color: #202020;
+    --channels-color-darken: #202020;
+
+    --titlebar-color: #202020;
+    --titlebar-color-darken: #202020;
+    --titlebar-color-alt: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom,#201d2e 0, #121016 100%);
+    --titlebar-color-alt2: url('https://www.twitchcord.com/twitchcord-theme/images/titlebar-alt-bg.png'), linear-gradient(to bottom, #121016 0, #201d2e 100%);
+    
+    --top-nav-color: #202020;
+
+    --links-color: #3191D9;
+
+    --button-color: #3191D9;
+    --button-color-hover: #53a2df;
+
+    --important-notification-color: #3191D9;
+    --important-notification-color-hover: #53a2df;
+
+    --dark-text-tint: #a195ad;
+    --dark-text-normal: #a49fad;
+    --dark-text-header: #dad8de;
+
+    --image-roundness: 0;
+
+    --font: 'Karla', sans-serif;
+    --font-coding: 'Source Code Pro', monospace;
+}
+
+a {
+    color: var(--links-color);
+}
+
+body {
+    font-family: var(--font)!important;
+    background-color: var(--chat-color);
+}
+
+body,
+span:not(.spinner-item) {
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+button:disabled, button:disabled:hover,
+input:disabled, input:disabled:hover,
+textarea:disabled, textarea:disabled:hover {
+    pointer-events: all!important;
+    cursor: not-allowed!important;
+}
+.wordmark-2L03Wr::before {
+    content: 'Minimal';
+    z-index: 999999999999999999999;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    position: fixed;
+    top: 8px;
+    left: 16px;
+    width: 200px;
+}
+
+.wordmark-2L03Wr::after {
+    content: 'cord';
+    text-transform: uppercase;
+    font-size: 14px;
+    z-index: 999999999999999999999;
+    position: fixed;
+    display: inline-block;
+    font-weight: 400;
+    color: var(--links-color);
+    height: auto;
+    top: 8px;
+    left: 80px;
+    background-color: transparent;
+}
+
+.wordmark-2L03Wr {
+    opacity: 1;
+    width: 100%;
+    background: var(--titlebar-color);
+    top: -4px;
+}
+.wordmark-2L03Wr svg {
+    display: none;
+}
+
+.appMount-14L89u {
+    background: var(--titlebar-color);
+}
+
+
+
+.titleBar-3_fDwJ {
+    z-index: 99999999;
+    background: var(--titlebar-color);
+    height: 25px;
+    margin-top: 4px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+.macButton-2KOco9 {
+    margin: 4px;
+}
+
+.macButtonClose-2yZ5OL {
+    margin-left: 10px;
+}
+
+
+.winButton-U7zAqI {
+    width: 45px;
+    height: 29px;
+    margin-top: -4px;
+    top: 0;
+    opacity: 1;
+    background-color: transparent;
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+    cursor: default;
+    background-size: 10px!important;
+}
+
+.winButton-U7zAqI:hover {
+    background-color: #29292A!important;
+}
+
+.user-settings-games .game-name {
+    height: 32px;
+}
+
+.user-settings-games .game .remove-game {
+    right: 199px;
+    top: 34px;
+    z-index: 1;
+}
+
+.user-settings-keybinds .keybind-group {
+    padding: 0 15px;
+    padding-bottom: 19px;
+    padding-top: 20px;
+}
+
+/* SERVERS SIDEBAR */
+.guilds-wrapper {
+    background: #202020;
+}
+/* SELECTED SERVER */
+.guilds-wrapper .guilds .guild.selected:before {
+    -webkit-transition: height .25s ease-in-out,margin-top .25s ease-in-out;
+    background: #3191D9;
+    border-radius: 0!important;
+    height: 55px;
+    margin-top: -27px;
+    transition: height .25s ease-in-out,margin-top .25s ease-in-out;
+}
+.guilds-wrapper .guilds .guild .guild-inner {
+    background: transparent !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+.guilds-wrapper .guilds-add {
+    -webkit-transition: border-color .25s ease,color .25s ease;
+    background: #3191D9;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border-radius: 0;
+    font-size: 40px;
+    color: #FFF;
+    font-weight: 300;
+    height: 100%;
+    line-height: 100%;
+    padding: 0;
+    text-align: center;
+    transition: border-color .25s ease,color .25s ease;
+    width: 100%;
+    text-shadow: 0;
+}
+.guilds-wrapper .guilds .friends-icon {
+    background-image: url(https://lh5.ggpht.com/SH0GFeQzs7w6RZoQ5PIxndvUPvoB1PB8eW_p28oeiRzw8P0MOThX_n_6H0iuJ1LKD9FT=w300);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 28px;
+    height: 50px;
+    width: 50px;
+}
+.guilds-wrapper .guilds .guild .guild-inner:hover {
+    background-color: #29292A;
+}
+/* Channels */
+.container-RYiLUQ {
+    background: #202020;
+}
+.container-RYiLUQ {
+    background: #202020;
+    contain: layout;
+    min-height: 0;
+    position: relative;
+}
+.theme-dark .search .search-bar {
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #3191D9;
+}
+.contentSelectedText-3j5CXt {
+    background-color: #29292A;
+    border-radius: 0;
+}
+.content-2mSKOj {
+    margin: 0;
+}
+.contentHoveredText-2HYGIY,
+.contentHoveredVoice-3qGNKh:active,
+.contentSelectedVoice-gTtYM9:active {
+    background-color: #29292A;
+    border-radius: 0;
+}
+/* Container with your name */
+.container-iksrDt {
+    background: #202020;
+    margin-bottom: 0px;
+}
+.channels-3g2vYe {
+    -ms-flex-negative: 0;
+    background: #202020;
+    flex-shrink: 0;
+    width: 240px;
+}
+.container-iksrDt {
+    -ms-flex-align: center;
+    -ms-flex-negative: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 400;
+    height: 52px;
+    margin-bottom: 1px;
+    padding: 0 10px;
+}
+
+.theme-dark .friends-table, .theme-dark .messages-wrapper {
+    background-color: #202020;
+}
+
+.theme-dark #friends {
+    background-color: #202020;
+}
+/* Contenedor de enviar mensajes */
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
+    background-color: #29292A;
+}
+.theme-dark .chat form {
+    background: transparent;
+    border-top: none;
+}
+.theme-dark .inner-3if5cm {
+    background-color: #29292A !important;
+    /*border: 1px solid #393D4D;*/
+    border-radius: 0;
+    color:#FFF !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.theme-dark .attachButtonDivider-3tknGJ {
+    visibility: hidden
+}
+.theme-dark .attachButtonPlus-2l1NEU {
+    fill: #59595A;
+}
+.attachButton-Di6YUh {
+    transition: all 0.5s;
+}
+.attachButton-Di6YUh:hover {
+    /* -webkit-transform: scale3d(1.1,1.1,1.1); */
+    /* transform: scale3d(1.1,1.1,1.1); */
+    fill: #fff
+}
+.theme-dark .title-qAcLxz {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 2px 0 rgba(0,0,0,.06);
+    background: #202020;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.00);
+    z-index: 10000
+}
+.theme-dark .headerBar-cxbhPD {
+    -webkit-box-shadow: none;
+    background: #202020;
+    box-shadow: none;
+}
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background-color: #5873DC;
+    color: #fff;
+    border-radius: 0;
+}
+/* Añadir amigo */
+.theme-dark #friends .tab-bar .tab-bar-separator {
+    background-color: hsla(0,0%,100%,.1);
+    display: none;
+}
+/* Tabs */
+.theme-dark #friends .tab-bar .tab-bar-item {
+    color: hsla(0,0%,100%,.6);
+    border-radius: 0;
+}
+.theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
+    background-color: #29292A;
+    color: #FFF;
+}
+/* En línea */
+.theme-dark #friends .tab-bar .tab-bar-item.selected {
+    background-color: #FC9600;
+    color: #fff;
+    border-radius: 0;
+}
+/* Tabla de Nombre | Estado | Servidores en comun */
+.theme-dark #friends .friends-table .friends-table-header {
+    border-bottom: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+/* Amigos */
+#friends .friends-table .friends-row:hover {
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+    background: rgba(153,170,181,.2);
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+    margin: 0 20px;
+    padding: 16px 10px;
+}
+.theme-dark #friends .friends-table .friends-row:hover {
+    background: #2D2D2E;
+}
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
+    background-color: transparent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.8);
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call {
+    border-radius: 0;
+}
+.private-channels .channel.selected a {
+    background-color: #29292A;
+    border-radius: 0;
+    color: #3191D9
+}
+.private-channels .channel.selected a .channel-name {
+    color: #3191D9 !important
+}
+.private-channels .channel a {
+    border-radius: 0
+}
+.private-channels .channel:hover a {
+    background-color: #29292A;
+}
+.scroller::-webkit-scrollbar-thumb {
+    border: 0!important;
+    background-color: #202020!important;
+    border-radius: 0 !important
+}
+.scroller::-webkit-scrollbar-track-piece {
+    border: none!important;
+    background-color: #29292A!important;
+}
+.scroller::-webkit-scrollbar {
+    width: 8px!important;
+}
+/* MEMBERS */
+.theme-dark .channel-members {
+    background-color: #202020;
+}
+.header-1tSljs {
+    box-shadow: none;
+}
+.appMount-14L89u {
+    background: #202020;
+}
+/* UPLOAD FILES */
+.uploadModal-2KN6Mm {
+    -ms-flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-filter: blur(0);
+    -webkit-perspective: 1000;
+    background-color: #29292A;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    filter: blur(0);
+    flex-direction: column;
+    min-height: 258px;
+    perspective: 1000;
+    width: 520px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.uploadModal-2KN6Mm .footer-4pOKm8 {
+    -ms-flex-direction: row;
+    -ms-flex-pack: end;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: end;
+    background-color: #29292A;
+    border-radius: 0 0 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.uploadModal-2KN6Mm .inner-1-09ZV {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    flex: 1;
+    margin: 10px;
+}
+.uploadModal-2KN6Mm .footer-4pOKm8 .button {
+    background-color: #3191D9;
+    height: 36px;
+    min-width: 84px;
+    padding: 0!important;
+    float: left;
+    border-radius: 0;
+    text-decoration: none
+}
+.theme-dark .inner-3if5cm {
+    background-color: #141D2C;
+}
+/* Configuración > Cerrar */
+.theme-dark .ui-standard-sidebar-view .btn-close {
+    border-color: rgb(76, 123, 225);
+    border-radius: 0;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* Configuración > Contenedor de la derecha */
+.ui-standard-sidebar-view .content-column.default {
+    padding: 20px 40px 80px;
+}
+.ui-standard-sidebar-view .content-column, .ui-standard-sidebar-view .custom-column {
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 460px;
+}
+.theme-dark .ui-standard-sidebar-view .content-region {
+    background: #29292A;
+}
+    /* Configuración > Mi cuenta > Rectangulo */
+    .theme-dark .cardPrimary-ZVL9Jr {
+        border-color: 0;
+        border-radius: 0;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    }
+    .theme-dark .cardPrimary-ZVL9Jr {
+        background: rgba(32,34,37,.6);
+        border-color: transparent;
+    }
+        /* Botones */
+        .buttonBrandFilled-3Mv0Ra {
+            background-color: #5873DC;
+            border-radius: 0;
+        }
+        /* Boton rojo */
+        .buttonRedOutlined-2t9fm_ {
+            border-color: rgba(240,71,71,.3);
+            color: #FFF;
+            border-radius: 0;
+            background-color: #f04747;
+            transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        }
+            /* Botones > Hover */
+            .buttonRedOutlined-2t9fm_:hover {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4)
+            }
+            .buttonBrandFilledDefault-2Rs6u5:hover {
+                background-color: #385FCF!important;
+            }
+    /* Contenedor de la derecha > Conexiones */
+    .theme-dark .elevationLow-5GEz9e {
+        -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+        border-radius: 0;
+    }
+    /* Contenedor de la derecha > Privacidad y seguridad */
+    .theme-dark .cardPrimaryEditable-2IQ7-V {
+        border-color: transparent;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    }
+    /* Contenedor de la derecha > Aplicaciones autorizadas */
+        .theme-dark .cardPrimaryOutline-2YyAz2 {
+            border-color: transparent;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+        }
+    /* Checkbox */
+    .theme-dark .checkbox-1QwaS4 {
+        background-color: #29292A !important;
+        border: 1px solid #5873DC;
+        border-radius: 0;
+    }
+    /* Siwtches */
+    .themeClear-1NqU69.valueChecked-3Bzkbm {
+        background-color: #7289da !important;
+    }
+    .sizeDefault-rZbSBU:after, .sizeMini-1Xu3Pz {
+        border-radius: 100%;
+        height: 24px;
+        z-index: 100000;
+    }
+    .sizeDefault-rZbSBU:after {
+        margin: 5px;
+        margin: -3px 0 0 0;
+        width: 24px;
+        z-index: 10000;
+    }
+    .size-yI1KRe:after {
+        background-color: #7289DA !important;
+        content: "";
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    .sizeDefault-rZbSBU {
+        border-radius: 14px;
+        height: 18px;
+        width: 42px;
+    }
+    .switchEnabled-3CPlLV {
+        opacity: 1;
+        overflow: unset;
+    }
+    .switchEnabled-3CPlLV:before {
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        opacity: 0;
+        position: unset;
+        z-index: -1000000;
+    }
+    /* Selectors */
+    .theme-dark .select-3JqNgs .Select-control {
+        -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+        background: #2D2D2E;
+        border: transparent;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    }
+    .theme-dark .select-3JqNgs .is-disabled .Select-control {
+        background: #2D2D2E;
+        border-color: transparent;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    }
+    /* Slider */
+    .grabber-1TZCZi {
+        -webkit-box-shadow: 0 3px 1px 0 rgba(0,0,0,.05), 0 2px 2px 0 rgba(0,0,0,.1), 0 3px 3px 0 rgba(0,0,0,.05);
+        background-color: #7883D5;
+        border: transparent;
+        border-radius: 100%;
+        box-shadow: 0 3px 1px 0 rgba(0,0,0,.05), 0 2px 2px 0 rgba(0,0,0,.1), 0 3px 3px 0 rgba(0,0,0,.05);
+        cursor: ew-resize;
+        height: 24px;
+        left: 0;
+        margin-left: -5px;
+        margin-top: -13px;
+        top: 50%;
+        width: 24px;
+    }
+    /* Inputs */
+    .theme-dark .input-2YozMi:hover {
+        border: 0;
+        border-color: transparent;
+        border-bottom: 1px solid #7883D5;
+    }
+    .theme-dark .input-2YozMi:focus {
+        border: 0;
+        border-color: transparent;
+        border-bottom: 1px solid #7883D5;
+    }
+    .theme-dark .input-2YozMi {
+        background-color: transparent;
+        border-color: transparent;
+        border-bottom: 1px solid #7883D5;
+        color: #f6f6f7;
+        border-radius: 0;
+    }
+/* Configuración > SIDEBAR */
+.ui-standard-sidebar-view .sidebar-region {
+    -ms-flex: 0;
+    -ms-flex-pack: end;
+    flex: 0;
+    z-index: 1;
+}
+.ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
+    justify-content: flex-start;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
+    background-color: #202020;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar {
+    background-color: #202020;
+}
+    /* Sidebar > Items */
+    .side-2nYO0F .itemSelected-3XxAMf {
+        background-color: #5873DC;
+        color: #9B9B9B;
+        border-radius: 0;
+        transition: all 1s;
+    }
+        /* Items > Hover */
+        .theme-dark .side-2nYO0F .itemDefault-3NDwnY:hover, .theme-dark .side-2nYO0F .itemHover-3rojsB:hover {
+            background-color: transparent;
+            color: #FFF;
+        }
+        /* Items > Selected */
+        .side-2nYO0F .itemSelected-3XxAMf {
+            background-color: #5873DC;
+            color: #fff;
+            border-radius: 0;
+        }
+        .itemDefault-3NDwnY .item-3879bf .notSelected-PgwTMa:hover {
+            border-radius: 0 !important;
+        }
+/* Menu popup */
+.menu-3BZuDT {
+    -webkit-box-shadow: 0 2px 10 0 rgba(0,0,0,.5);
+    background: #29292A;
+    border-radius: 0;
+    box-shadow: 0 2px 10 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    width: 216px;
+}
+.separator-1hpa3S {
+    -webkit-box-sizing: border-box;
+    border-bottom: 0;
+    box-sizing: border-box;
+}
+.item-rK1j5B:hover {
+    background-color: transparent;
+    color: #FFF;
+    opacity: 1;
+}
+/* Mensajes anclados */
+.theme-dark .themed-popout {
+    background-color: #29292A;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .themed-popout .header {
+    background-color: #29292A;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .themed-popout .footer {
+    background-color: #29292A;
+}
+    /* Messages */
+    .theme-dark .messages-popout-wrap .messages-popout .message-group {
+        border-color: transparent;
+        background-color: transparent;
+        border-bottom: solid 1px #313132;
+        border-radius: 0;
+        transition: all 0.2s ease-in-out
+    }
+    .theme-dark .messages-popout-wrap .messages-popout .message-group:hover {
+        border-color: transparent;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.4)
+    }
+/* New Messages */
+.chat .new-messages-bar {
+    background-color: #3191D9;
+    border: transparent;
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4)
+}
+.theme-dark .friends-table .messages .divider.divider-red>div, .theme-dark .messages-wrapper .messages .divider.divider-red>div {
+    border-radius: 0;
+    background-color: #29292A
+}
+.theme-dark .friends-table .messages .divider:not(.red) div, .theme-dark .messages-wrapper .messages .divider:not(.red) div {
+    background-color: #29292A;
+}
+.theme-dark .friends-table .messages .divider.divider-red>span, .theme-dark .messages-wrapper .messages .divider.divider-red>span {
+    color: #FFF;
+    border-radius: 0;
+    background-color: #29292A
+}
+.theme-dark .friends-table .messages .divider:not(.red) span, .theme-dark .messages-wrapper .messages .divider:not(.red) span {
+    color: rgba(153,170,181,.5);
+    background-color: transparent;
+    border: 0 !important;
+    border-color: transparent
+}
+/* EMOJIS */
+.search-bar.search-bar-light {
+    background-color: #29292A !important;
+}
+.search-bar.search-bar-light .search-bar-inner {
+    background-color: rgba(199,209,216,.3);
+    border: 1px solid transparent;
+    border-radius: 0!important;
+}
+.emojiPicker-3g68GS .dimmer-jySV_v {
+    -webkit-transition: background-color .15s ease-in-out;
+    background-color: transparent;
+    border-radius: 0;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    transition: background-color .15s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+.emojiPicker-3g68GS {
+    -ms-flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,.1);
+    background-color: #29292A;
+    border: 0;
+    border-radius: 0 !important;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
