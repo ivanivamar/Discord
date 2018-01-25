@@ -60,6 +60,7 @@ textarea:disabled, textarea:disabled:hover {
 }
 .wordmark-2L03Wr::before {
     content: 'Minimal';
+    background-color: var(--titlebar-color);
     z-index: 999999999999999999999;
     font-size: 14px;
     text-transform: uppercase;
@@ -89,22 +90,19 @@ textarea:disabled, textarea:disabled:hover {
 .wordmark-2L03Wr {
     opacity: 1;
     width: 100%;
-    background: #fff;
+    background-color: #202020;
     top: -4px;
 }
 .wordmark-2L03Wr svg {
     display: none;
 }
-var(--titlebar-color)
 .appMount-14L89u {
-    background: #fff;
+    background: #202020;
 }
-
-
 
 .titleBar-3_fDwJ {
     z-index: 99999999;
-    background: #fff;
+    background: #202020;
     height: 25px;
     margin-top: 4px;
     -webkit-box-pack: start;
