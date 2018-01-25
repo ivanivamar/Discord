@@ -1039,3 +1039,7 @@ textarea:disabled, textarea:disabled:hover {
     border-color: transparent !important;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
+.theme-dark .typing-3eiiL_ {
+    background-color: #29292A;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
