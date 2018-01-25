@@ -1,4 +1,4 @@
-//META{"name":"MinimalCord","description":"Minimal design of discord","author":"Kast","version":"1.0"}*//
+//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.1"}*//
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
@@ -89,22 +89,22 @@ textarea:disabled, textarea:disabled:hover {
 .wordmark-2L03Wr {
     opacity: 1;
     width: 100%;
-    background: var(--titlebar-color);
+    background: #fff;
     top: -4px;
 }
 .wordmark-2L03Wr svg {
     display: none;
 }
-
+var(--titlebar-color)
 .appMount-14L89u {
-    background: var(--titlebar-color);
+    background: #fff;
 }
 
 
 
 .titleBar-3_fDwJ {
     z-index: 99999999;
-    background: var(--titlebar-color);
+    background: #fff;
     height: 25px;
     margin-top: 4px;
     -webkit-box-pack: start;
@@ -185,7 +185,7 @@ textarea:disabled, textarea:disabled:hover {
     background: #3191D9;
     border: 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    border-radius: 0;
+    border-radius: 100%;
     font-size: 40px;
     color: #FFF;
     font-weight: 300;
@@ -193,9 +193,12 @@ textarea:disabled, textarea:disabled:hover {
     line-height: 100%;
     padding: 0;
     text-align: center;
-    transition: border-color .25s ease,color .25s ease;
+    transition: all .25s ease,color .25s ease;
     width: 100%;
     text-shadow: 0;
+}
+.guilds-wrapper .guilds-add:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 }
 .guilds-wrapper .guilds .friends-icon {
     background-image: url(https://lh5.ggpht.com/SH0GFeQzs7w6RZoQ5PIxndvUPvoB1PB8eW_p28oeiRzw8P0MOThX_n_6H0iuJ1LKD9FT=w300);
@@ -317,7 +320,7 @@ textarea:disabled, textarea:disabled:hover {
     color: #fff;
     border-radius: 0;
 }
-/* Añadir amigo */
+/* A�adir amigo */
 .theme-dark #friends .tab-bar .tab-bar-separator {
     background-color: hsla(0,0%,100%,.1);
     display: none;
@@ -331,7 +334,7 @@ textarea:disabled, textarea:disabled:hover {
     background-color: #29292A;
     color: #FFF;
 }
-/* En línea */
+/* En l�nea */
 .theme-dark #friends .tab-bar .tab-bar-item.selected {
     background-color: #FC9600;
     color: #fff;
@@ -451,16 +454,22 @@ textarea:disabled, textarea:disabled:hover {
     border-radius: 0;
     text-decoration: none
 }
+.uploadModal-2KN6Mm .footer-4pOKm8 .button-primary {
+    -webkit-transition: opacity .2s ease-in-out;
+    background-color: #3191D9;
+    color: #fff;
+    transition: opacity .2s ease-in-out;
+}
 .theme-dark .inner-3if5cm {
     background-color: #141D2C;
 }
-/* Configuración > Cerrar */
+/* Configuraci�n > Cerrar */
 .theme-dark .ui-standard-sidebar-view .btn-close {
     border-color: rgb(76, 123, 225);
     border-radius: 0;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-/* Configuración > Contenedor de la derecha */
+/* Configuraci�n > Contenedor de la derecha */
 .ui-standard-sidebar-view .content-column.default {
     padding: 20px 40px 80px;
 }
@@ -475,7 +484,7 @@ textarea:disabled, textarea:disabled:hover {
 .theme-dark .ui-standard-sidebar-view .content-region {
     background: #29292A;
 }
-    /* Configuración > Mi cuenta > Rectangulo */
+    /* Configuraci�n > Mi cuenta > Rectangulo */
     .theme-dark .cardPrimary-ZVL9Jr {
         border-color: 0;
         border-radius: 0;
@@ -614,7 +623,7 @@ textarea:disabled, textarea:disabled:hover {
         color: #f6f6f7;
         border-radius: 0;
     }
-/* Configuración > SIDEBAR */
+/* Configuraci�n > SIDEBAR */
 .ui-standard-sidebar-view .sidebar-region {
     -ms-flex: 0;
     -ms-flex-pack: end;
@@ -784,4 +793,251 @@ textarea:disabled, textarea:disabled:hover {
     top: 50%;
     width: 4px;
     box-shadow: 0 0 10px #5873DC;
+}
+/* SEARCH */
+/* Search Option Stuff */
+.search-popout .option.selected {
+    background-color: #323234;
+    border-radius: 0
+}
+.search-popout .option.selected:after {
+    background: #202020;
+    border-radius: 0
+}
+.search-popout {
+    background-color: #29292A;
+    box-shadow: none;
+    border-radius: 0
+}
+.search-popout .option:after {
+    background: #29292A;
+    border-radius: 0
+}
+.theme-dark .searchAnswer-yD90ey, .theme-dark .searchFilter-1fJ0cd {
+    background-color: transparent !important;
+    border-radius: 0;
+}
+.theme-dark .search-results-wrap .search-header {
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,20%);
+    background-color: #29292A;
+    box-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+.search-results-wrap .results-wrapper {
+    padding-left: 0;
+}
+.theme-dark .search-results-wrap {
+    background-color: #29292A;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+.theme-dark .search-results-wrap .search-result .search-result-message.hit {
+    border: none;
+    border-radius: 0;
+    background-color: #202020;
+}
+.theme-dark .search-results-wrap .search-result .search-result-message.after, .theme-dark .search-results-wrap .search-result .search-result-message.before {
+    opacity: .3;
+    background-color: transparent;
+    box-shadow: 0 !important;
+}
+.theme-dark .search-results-wrap .action-buttons .jump-button {
+    background-color: #29292A;
+    color: hsla(0,0%,100%,.6);
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .search-results-wrap .channel-separator .channel-name {
+    box-shadow: 0;
+}
+.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
+    -webkit-box-sizing: border-box;
+    background-color: #202020;
+    border: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+/* Mensajes antiguos */
+.theme-dark .chat .jump-to-present-bar {
+    background-color: #5873DC;
+    border-radius: 0;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+}
+.theme-dark .chat .jump-to-present-bar:hover {
+    background-color: #5873DC;
+    transform: scale(1.05,1.05)
+}
+/* Modal Servidores */
+.create-guild-container.deprecated .create-or-join .form-inner {
+    -webkit-box-sizing: border-box;
+    background-color: #202020;
+    background-image: none;
+    background-position: 0 100%,100% 100%;
+    background-repeat: no-repeat;
+    background-size: 155px auto,75px auto;
+    box-sizing: border-box;
+    height: 420px;
+    padding: 30px 24px;
+    width: 520px;
+    border-radius: 0
+}
+.create-guild-container.deprecated .action {
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    -webkit-box-sizing: border-box;
+    background: #29292A;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    width: 228px;
+}
+.create-guild-container.deprecated .action.create .action-icon {
+    background: url(https://image.flaticon.com/icons/png/512/265/265674.png);
+    background-size: 38%;
+    height: 27%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.create-guild-container.deprecated .action.join .action-icon {
+    background: url(https://image.flaticon.com/icons/png/512/653/653272.png) 50% no-repeat;
+    background-size: 40%;
+    height: 78px;
+}
+.create-guild-container.deprecated .create-or-join .actions .or {
+    background-image: url(https://image.flaticon.com/icons/png/512/261/261956.png);
+    background-position: 50%,50%;
+    background-repeat: no-repeat;
+    background-size: 52px,52px;
+    color: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    height: 100%;
+    left: 0;
+    line-height: 368px;
+    padding-top: 48px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.form-deprecated .btn-primary, .form.deprecated .btn-primary {
+    background-color: #3191D9;
+    border-radius: 0;
+    color: #fff;
+}
+.tooltip.tooltip-red {
+    background-color: #3191D9;
+    border-radius: 0 !important;
+    color: white;
+}
+.tooltip.tooltip-black {
+    background-color: #3191D9;
+    border-radius: 0 !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+    color: white;
+    border: none;
+}
+.tooltip.tooltip-red.tooltip-right:after {
+    border-right: none;
+}
+.tooltip.tooltip-black.tooltip-top:after {
+    border-top: none;
+}
+.tooltip.tooltip-black.tooltip-right:after {
+    border-right: none;
+}
+.tooltip.tooltip-black.tooltip-bottom:after {
+    border-bottom: none;
+}
+.tooltip.tooltip-black.tooltip-left:after {
+    border-left: none;
+}
+.userPopout-4pfA0d {
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(32,34,37,.6);
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+    width: 250px;
+}
+.theme-dark .headerNormal-1cioxU {
+    background-color: #3191D9;
+}
+.avatarWrapper-2Gfmp1 {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #29292A;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .body-3rkFrF, .theme-dark .footer-2J5zqP {
+    background-color: #29292A;
+    color: hsla(0,0%,100%,.8);
+}
+.role-3rahR_ {
+    -webkit-box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: 22px;
+    margin: 0 4px 4px 0;
+    padding: 4px;
+    background-color: #2D2D2E;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .quickMessage-28pD5Y {
+    background-color: #313132;
+    border-color: transparent;
+    color: hsla(0,0%,100%,.7);
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.activity-AFBUEw {
+    background-color: transparent;
+    padding: 10px;
+}
+/* Images */
+.theme-dark .message-group a {
+    color: #0096cf;
+    border-radius: 0;
+}
+/* Code */
+.theme-dark .message-group .comment .markup pre {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
+    background: #29292A;
+}
+.typing-3eiiL_ strong {
+    color: #3191D9;
+}
+/* Right click */
+.small-popout-box {
+    background: #29292A;
+    border: transparent;
+    border-radius: 0;
+    position: relative;
+}
+.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
+    background: -webkit-gradient(linear,left top,right top,color-stop(85%,#282b30),to(#2f3136));
+    background: #333333;
+}
+.contextMenu-uoJTbz {
+    background-color: #29292A;
+    border-radius: 0;
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.Select-menu-outer {
+    background-color: #29292A;
+    border-radius: 0;
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
