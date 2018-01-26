@@ -1,4 +1,4 @@
-//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.2"}*//
+//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.2.1"}*//
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
@@ -1042,6 +1042,7 @@ svg[class^="attachButton"] > *{display: none;}
 }
 .typing-3eiiL_ strong {
     color: #3191D9;
+    text-align: center
 }
 /* Right click */
 .small-popout-box {
@@ -1069,8 +1070,14 @@ svg[class^="attachButton"] > *{display: none;}
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 .theme-dark .typing-3eiiL_ {
-    background-color: #202020;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    float: right;
+    text-align: center
+}
+.theme-dark .typing-3eiiL_ span {
+    display: none
 }
 .theme-dark .message-group:not(.has-divider) {
     border-bottom-color: transparent;
