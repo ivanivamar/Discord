@@ -1,6 +1,6 @@
-//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.1"}*//
+//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.2"}*//
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
     --version: "MinimalCord v1.0";
@@ -10,7 +10,7 @@
     --dark-modal-bg: #202020;
 
     --chat-color: #29292A;
-    
+    --you-color: #3191D9;
     --channels-color: #202020;
     --channels-color-darken: #202020;
 
@@ -274,19 +274,47 @@ textarea:disabled, textarea:disabled:hover {
     background-color: #202020;
 }
 /* Contenedor de enviar mensajes */
+.chat form {
+    -ms-flex-negative: 0;
+    -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+    position: relative;
+}
+.channelTextArea-os01xC {
+    margin: 0;
+}
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
     background-color: #29292A;
 }
 .theme-dark .chat form {
-    background: transparent;
+    background: #202020;
     border-top: none;
 }
+/* Link button */
+svg[class^="attachButton"]{
+    background-image: url('https://image.flaticon.com/icons/png/128/321/321834.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+svg[class^="attachButton"] > *{display: none;}
+/* Emoji button */
+.spriteNormal-3BYqCK {
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+}
 .theme-dark .inner-3if5cm {
-    background-color: #29292A !important;
-    /*border: 1px solid #393D4D;*/
+    background-color: #202020 !important;
     border-radius: 0;
     color:#FFF !important;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 .theme-dark .attachButtonDivider-3tknGJ {
     visibility: hidden
@@ -1007,6 +1035,7 @@ textarea:disabled, textarea:disabled:hover {
     border: 0;
     border-radius: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    font-family: 'Roboto Mono', monospace !important;
 }
 .theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
     background: #29292A;
@@ -1040,6 +1069,22 @@ textarea:disabled, textarea:disabled:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 .theme-dark .typing-3eiiL_ {
-    background-color: #29292A;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    background-color: #202020;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+}
+.theme-dark .message-group:not(.has-divider) {
+    border-bottom-color: transparent;
+}
+/* Server not read */
+.guilds-wrapper .guilds .guild.unread:before {
+    background: #3191D9;
+    border-radius: 0;
+    height: 15px;
+    margin-top: -6px;
+    box-shadow: 0 0 12px #5873DC;
+}
+.theme-dark .chat form {
+    -webkit-box-shadow: none;
+    border: 0;
+    box-shadow: none;
 }
