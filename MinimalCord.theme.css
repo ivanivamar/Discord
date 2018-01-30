@@ -1,4 +1,4 @@
-//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.2.3"}*//
+//META{"name":"MinimalCord","description":"Minimal flat and dark theme for discord","author":"Kast","version":"1.2.4"}*//
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
@@ -1142,4 +1142,20 @@ svg[class^="attachButton"] > *{display: none;}
 }
 .connectedAccount-3mKaTA:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .wrapper-uAa07y {
+    background: #29292A;
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+.theme-dark .buttonPrimaryOutlinedDefault--H0hhk:hover {
+    border-color: transparent !important;
+}
+.theme-dark .buttonPrimaryOutlinedDefault--H0hhk, .theme-dark .buttonPrimaryOutlinedSubmitting-3m3eFx {
+    border-color: transparent;
+    color: #43B581;
+    border-radius: 0 !important;
+    background: #202020;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.8);
 }
