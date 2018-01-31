@@ -1367,7 +1367,7 @@ svg[class^="attachButton"] > *{display: none;}
     border-radius: 0;
     margin-bottom: 2px;
     padding-bottom: 6px;
-    color: #000 !important;
+    color: #FFF !important;
     padding-top: 6px;
     transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
