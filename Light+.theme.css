@@ -1811,3 +1811,24 @@ textarea:disabled, textarea:disabled:hover {
     flex: 0 0 auto;
     margin-top: 10px;
 }
+/* LINK CARD */
+.message-group .accessory>* {
+    box-shadow: var(--shadow);
+    border-radius: 0
+}
+.embedPill-3sYS1X {
+    -ms-flex-negative: 0;
+    background-color: var(--accent-color);
+    border-radius: 0;
+    flex-shrink: 0;
+    width: 4px;
+}
+.embedInner-t4ag7g {
+    -webkit-box-sizing: border-box;
+    background: var(--popups);
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 8px 10px;
+}
