@@ -1,4 +1,4 @@
-//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"1.1"}*//
+//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.0"}*//
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
@@ -15,7 +15,9 @@
     --titlebar-color: #FFFFFF;
     --chat-color: #FFFFFF;
 
-    --guilds: #2C2C2C;
+    --guilds: #303030;
+    --guilds-hover: #3A3A3A;
+    --guilds-selected: #202020;
     --guilds-color: #AAAAAA;
 
     --channels: #F3F3F3;
@@ -86,6 +88,8 @@ textarea:disabled, textarea:disabled:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #929292 !important
+}::-webkit-scrollbar-thumb:focus {
+    background-color: #666666 !important
 }
 ::-webkit-scrollbar {
     width: 12px!important;
@@ -236,26 +240,31 @@ textarea:disabled, textarea:disabled:hover {
         text-align: center;
         background: transparent !important;
     }
+    .guilds-wrapper .guilds .guild .guild-inner:hover {
+        background-color: var(--guilds-hover);
+        width: 80px
+    }
     /* ADD SERVER BUTTON */
     .guilds-wrapper .guilds-add {
-        -webkit-transition: border-color .25s ease,color .25s ease;
         background: var(--accent-color);
         border: 0;
         border-radius: 0;
-        color: #FFF;
+        color: #F2F2F2;
         font-size: 40px;
         font-weight: 300;
-        height: 100%;
         line-height: 100%;
+        margin-left: -10px;
+        margin-top: 10px !important;
         padding: 0;
-        text-align: center;
-        transition: all .25s ease,color .25s ease;
-        width: 100%;
-        box-shadow: var(--shadow) !important;
+        height: 10px !important;
+        width: 5.1% !important;
+        position: fixed !important;
+        bottom: 0 !important;
     }
     .guilds-wrapper .guilds-add:hover {
-        box-shadow: var(--shadow-2) !important;
-        color: #FFFFFF
+        box-shadow: var(--shadow) !important;
+        color: #FFFFFF;
+        height: 45px !important;
     }
 /* CHANNELS BAR */
 .channels-3g2vYe, .container-RYiLUQ {
@@ -296,16 +305,15 @@ textarea:disabled, textarea:disabled:hover {
         color: var(--color)
     }
     .unread-23Kvxk {
-        background-color: transparent;
+        background-color: var(--guilds-color);
         border-radius: 0;
-        height: 31px;
+        height: 100%;
         left: 0;
         margin-top: -17px;
         position: absolute;
         top: 50%;
         width: 100%;
         z-index: 0;
-        border-bottom: 3px solid var(--accent-color);
         -webkit-animation: flickerAnimation 1s infinite;
         -moz-animation: flickerAnimation 1s infinite;
         -o-animation: flickerAnimation 1s infinite;
@@ -503,7 +511,8 @@ textarea:disabled, textarea:disabled:hover {
     display: inline;
 }
 .theme-light .typing-3eiiL_ {
-    background: rgba(243, 243, 243, 0);
+    background: rgba(243, 243, 243, 1);
+    border-top-right-radius: 5px;
     width: auto;
     padding: 0 5px 0 0;
     top: -26px;
@@ -528,18 +537,16 @@ textarea:disabled, textarea:disabled:hover {
     padding: .2em;
     text-indent: 0;
     width: auto;
-    box-shadow: var(--shadow)
 }
 /* SELECTED SERVER */
 .guilds-wrapper .guilds .guild.selected:before {
-    background: #161616;
-    border: 0;
+    background: var(--guilds-selected);
+    border-left: 3px solid var(--accent-color);
     border-radius: 0;
-    height: 58px;
-    margin-top: -29px;
-    width: 85px;
-    margin-left: -10px;
-    box-shadow: none;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -20px;
+    width: 100px;
 }.guilds-wrapper .guilds .guild.selected:before:hover {box-shadow: var(--shadow-2)}
 /* Emojis */
 .popout.popout-top-right.no-arrow, .popout.popout-top.no-arrow {
@@ -1174,12 +1181,14 @@ textarea:disabled, textarea:disabled:hover {
     z-index: 1;
 }
 .guilds-wrapper .guilds .guild.unread:before {
-    background: rgba(255,255,255,.3);
+    background-color: transparent;
     border-radius: 0;
-    height: 56px;
+    height: 50px;
     margin-top: -28px;
-    width: 75px;
-    box-shadow: var(--shadow-2);
+    margin-left: 2px;
+    width: 1px;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0px 0px 5px var(--accent-color);
     -webkit-animation: flickerAnimation 1s infinite;
     -moz-animation: flickerAnimation 1s infinite;
     -o-animation: flickerAnimation 1s infinite;
@@ -1834,4 +1843,152 @@ textarea:disabled, textarea:disabled:hover {
 }
 .search .DraftEditor-root .public-DraftEditor-content, .search .DraftEditor-root .public-DraftEditorPlaceholder-root {
     padding: 2px;
+}
+.popout .themed-popout {
+    background-color: var(--popups);
+    border: 1px solid var(--accent-color);
+    border-radius: 0;
+}
+    .messages-popout .message-group:last-of-type {
+        border: 0;
+    }
+    .messages-popout .message-group {
+        border: 0;
+        border-radius: 0;
+        box-shadow: var(--shadow-2);
+        margin: 0 0 6px;
+        overflow: hidden;
+        padding: 10px;
+        position: relative;
+        transition: border-color .1s ease-in-out;
+        user-select: none;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1)
+    }.messages-popout .message-group:hover {background-color: var(--popups-hover);box-shadow: none}
+    .messages-popout .message-group:hover .action-buttons {
+        -webkit-box-shadow: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0 !important;
+        color: #FFF;
+    }
+    .messages-popout .message-group:hover .action-buttons > * {
+        color: #FFF;
+        background-color: var(--buttons-color);
+        border-radius: 0
+    }
+    .messages-popout .message-group:hover .action-buttons > *:hover {
+        color: #FFF;
+        background-color: var(--buttons-color-hover);
+    }
+    .uploadModal-2KN6Mm .footer-4pOKm8 {
+        background-color: transparent;
+        border-radius: 0;
+    }
+/* Messages */
+/* Name */
+.message-group h2 strong {
+    color: #2B2B2B !important;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-weight: bold;
+    display: inline-block;
+}
+.chat .user-name::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #000;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+}.chat .user-name:hover {text-decoration: none}
+.chat .user-name:hover::after {
+    width: 100%;
+    /*transition: width .3s;*/
+}
+/* Message */
+.message-group .comment .markup {
+    color: #2B2B2B !important;
+    font-size: 0.9375rem;
+    line-height: 1.1em;
+    margin-top: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Audio channels - Counter of people */
+.wrapper-2ldvyE {
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-family: SourceCodePro,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    border: 1px solid var(--accent-color);
+    padding: 0 4px;
+}
+#pubslayer h2.ui-form-title {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#pubslayer h5.ui-form-title {
+    color: #000;
+}
+#pubslayer button {
+    background: var(--buttons-color);
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    border: 0;
+    border-radius: 0;
+    transition: background-color .17s ease;
+}
+#pubslayer button:hover {
+    background: var(--buttons-color-hover);
+}
+#pubslayer .ui-tab-bar-item:hover {
+    color: #000;
+    background-color: var(--channels-hover);
+}
+#pubslayer .ui-tab-bar-item {
+    color: #161616;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 2px;
+    padding: 6px 10px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-shrink: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+#pubslayer .ui-tab-bar-item.selected {
+    color: #fff;
+    background-color: var(--accent-color);
+    border-radius: 0
+}
+#pubslayer input {
+    color: #000;
+    background-color: transparent;
+    border-color: var(--accent-color);
+    padding: 10px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    outline: 0;
+    transition: background-color .15s ease,border .15s ease;
+}
+#pubslayer input:focus {
+    box-shadow: var(--shadow)
 }
