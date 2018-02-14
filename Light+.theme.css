@@ -1,4 +1,4 @@
-//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.0"}*//
+//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.1"}*//
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
@@ -240,31 +240,44 @@ textarea:disabled, textarea:disabled:hover {
         text-align: center;
         background: transparent !important;
     }
-    .guilds-wrapper .guilds .guild .guild-inner:hover {
-        background-color: var(--guilds-hover);
-        width: 80px
+    .guilds-wrapper .guilds .guild .guild-inner .avatar-small:hover::before {
+        background: rgba(#FFF, 1);
+        transition: 0ms ease;
+    }
+    .guilds-wrapper .guilds .guild .guild-inner .avatar-small::before {
+        height: 100% !important;
+        width: 100% !important;
+        content: "";
+        background: transparent;
+        display: block;
+        visibility: visible;
+        position: absolute;
+        z-index: 0;
+        transition: 0ms ease;
+        top: 0;
+        left: 0;
     }
     /* ADD SERVER BUTTON */
     .guilds-wrapper .guilds-add {
         background: var(--accent-color);
         border: 0;
         border-radius: 0;
-        color: #F2F2F2;
+        color: transparent;
         font-size: 40px;
         font-weight: 300;
         line-height: 100%;
         margin-left: -10px;
-        margin-top: 10px !important;
         padding: 0;
-        height: 10px !important;
-        width: 5.1% !important;
+        height: 45px !important;
+        width: .5% !important;
         position: fixed !important;
         bottom: 0 !important;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
     }
-    .guilds-wrapper .guilds-add:hover {
+    .guilds-wrapper .guilds-add:hover, .guilds-wrapper .guilds-add:focus {
         box-shadow: var(--shadow) !important;
         color: #FFFFFF;
-        height: 45px !important;
+        width: 5.1% !important;
     }
 /* CHANNELS BAR */
 .channels-3g2vYe, .container-RYiLUQ {
@@ -1991,4 +2004,7 @@ textarea:disabled, textarea:disabled:hover {
 }
 #pubslayer input:focus {
     box-shadow: var(--shadow)
+}
+.iconHovered-3PRzOR, .iconHoveredCollapsed-jNYgOD, .nameHovered-1YFSWq, .nameHoveredCollapsed-2c-EHI {
+    color: var(--color);
 }
