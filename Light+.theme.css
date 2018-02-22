@@ -1,4 +1,4 @@
-//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.1"}*//
+//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.2"}*//
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
@@ -12,7 +12,7 @@
     --color: #000;
     --accent-color: #007ACC;
 
-    --titlebar-color: #FFFFFF;
+    --titlebar-color: #FFFFF;
     --chat-color: #FFFFFF;
 
     --guilds: #303030;
@@ -118,7 +118,7 @@ textarea:disabled, textarea:disabled:hover {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 900;
-    color: var(--color);
+    color: #000;
     position: fixed;
     top: 8px;
     left: 16px;
@@ -167,15 +167,14 @@ textarea:disabled, textarea:disabled:hover {
     position: relative;
 }
 
-.macButton-2KOco9 {
-    margin: 4px;
+.winButtonClose-2rIvsa > svg > polygon {
+    fill: #000 !important;
+}
+.winButtonMinMax-bT_gQ1 > svg > rect {
+    stroke: #000 !important;
+    fill: none !important;
 }
 
-.macButtonClose-2yZ5OL {
-    margin-left: 10px;
-}
-
-/* TOP RIGHT BUTTONS */
 .winButton-U7zAqI {
     width: 45px;
     height: 29px;
@@ -188,21 +187,19 @@ textarea:disabled, textarea:disabled:hover {
     cursor: default;
     background-size: 10px!important;
 }
-/* CLOSE BUTTON */
-.winButton-U7zAqI > svg > polygon{
-    fill: var(--color) !important;
-    stroke: transparent !important;
+
+.winButtonClose-2rIvsa:hover {
+    background-color: #f04747;
 }
-/* MIN-MAX BUTTONS */
-.winButton-U7zAqI > svg > rect {
-    fill: transparent !important;
-    stroke: var(--color) !important;
+.winButtonClose-2rIvsa:hover > svg > polygon {
+    fill: #FFF !important;
 }
-/* TOP RIGHT BUTTONS HOVER */
-.winButton-U7zAqI:hover {
-    background-color: var(--channels-hover) !important;
-}.winButton-U7zAqI:nth-child(2):hover {
-    background-color: #E81123;
+.winButtonMinMax-bT_gQ1:hover {
+    background-color: var(--channels-hover);
+}
+.winButtonMinMax-bT_gQ1:hover > svg > rect {
+    stroke: #000 !important;
+    fill: none !important;
 }
 
 /* APP */
@@ -529,11 +526,12 @@ textarea:disabled, textarea:disabled:hover {
     width: auto;
     padding: 0 5px 0 0;
     top: -26px;
+    float: right !important;
     position: absolute;
 }
 .typing-3eiiL_ strong {
     color: var(--accent-color);
-    text-align: center
+    text-align: center;
 }
 /* CODE */
 .message-group .comment .markup pre {
@@ -1034,7 +1032,8 @@ textarea:disabled, textarea:disabled:hover {
         opacity: .8;
     }
     .private-channels .channel a {
-        border-radius: 0
+        border-radius: 0;
+        color: #000;
     }
     .private-channels .channel:hover a {
         background-color: var(--channels-hover);
@@ -2008,4 +2007,10 @@ textarea:disabled, textarea:disabled:hover {
 }
 .iconHovered-3PRzOR, .iconHoveredCollapsed-jNYgOD, .nameHovered-1YFSWq, .nameHoveredCollapsed-2c-EHI {
     color: var(--color);
+}
+.nameHoveredVoice-TIoHRJ {
+    color: #000;
+}
+svg.Gear {
+    display: none
 }
