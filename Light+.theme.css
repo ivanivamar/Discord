@@ -2014,12 +2014,12 @@ svg.Gear {
     display: none
 }
 .tooltip.tooltip-red {
-    background-color: #3191D9;
+    background-color: var(--accent-color);
     border-radius: 0 !important;
     color: white;
 }
 .tooltip.tooltip-black {
-    background-color: #3191D9;
+    background-color: var(--accent-color);
     border-radius: 0 !important;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
     color: white;
