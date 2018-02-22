@@ -1,4 +1,4 @@
-//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.2"}*//
+//META{"name":"Light+","description":"Supreme light theme for Discord","author":"Kast","version":"2.1"}*//
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
@@ -2013,4 +2013,38 @@ textarea:disabled, textarea:disabled:hover {
 }
 svg.Gear {
     display: none
+}
+.tooltip.tooltip-red {
+    background-color: #3191D9;
+    border-radius: 0 !important;
+    color: white;
+}
+.tooltip.tooltip-black {
+    background-color: #3191D9;
+    border-radius: 0 !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+    color: white;
+    border: none;
+}
+.tooltip.tooltip-red.tooltip-right:after {
+    border-right: none;
+}
+.tooltip.tooltip-black.tooltip-top:after {
+    border-top: none;
+}
+.tooltip.tooltip-black.tooltip-right:after {
+    border-right: none;
+}
+.tooltip.tooltip-black.tooltip-bottom:after {
+    border-bottom: none;
+}
+.tooltip.tooltip-black.tooltip-left:after {
+    border-left: none;
+}
+.userPopout-4pfA0d {
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(32,34,37,.6);
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+    width: 250px;
 }
