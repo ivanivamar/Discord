@@ -765,10 +765,6 @@ svg[class^="attachButton"] > *{display: none;}
 .theme-dark .itemSubMenu-1vN_Yn {
     background: var(--channels-bg-hover-color) url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
 }
-* {
-    font-family: Helvetica, Arial, Sans-Serif;
-    border-radius: 0;
-}
 .theme-dark .item-1Yvehc:hover {
     background: var(--channels-bg-hover-color);
     color: #fff;
