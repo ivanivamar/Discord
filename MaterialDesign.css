@@ -862,3 +862,8 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     padding-right: 30px;
     visibility: hidden;
 }
+.theme-dark .attachment-33OFj0 {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4)
+}
