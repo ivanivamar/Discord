@@ -431,7 +431,7 @@ svg[class^="attachButton"] > *{display: none;}
     box-shadow: none;
     contain: layout;
     padding: 0;
-    z-index: 1000;
+    z-index: 1000000000;
 }
 #bda-qem {
     border-radius: 5px 5px 0 0;
@@ -835,7 +835,7 @@ svg[class^="attachButton"] > *{display: none;}
     overflow: hidden;
 }
 a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
-    z-index: 100000;
+    z-index: 0;
 }
 #friends .friends-table .friends-row .friends-column-name .avatar-small {
     margin-right: 0;
