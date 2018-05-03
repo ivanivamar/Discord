@@ -765,3 +765,104 @@ svg[class^="attachButton"] > *{display: none;}
 .theme-dark .itemSubMenu-1vN_Yn {
     background: var(--channels-bg-hover-color) url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
 }
+* {
+    font-family: Helvetica, Arial, Sans-Serif;
+    border-radius: 0;
+}
+.theme-dark .item-1Yvehc:hover {
+    background: var(--channels-bg-hover-color);
+    color: #fff;
+}
+.theme-dark .searchPopout-1vUlP3 {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+    background-color: var(--contextual-menu-bg);
+    border: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+.theme-dark .itemSubMenu-1vN_Yn {
+    background: var(--channels-bg-hover-color) url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
+}
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: var(--channels-bg-hover-color);
+}
+.theme-dark .headerNormal-T_seeN {
+    background-color: var(--accent-bg-color);
+}
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background-color: var(--contextual-menu-bg);
+    color: hsla(0,0%,100%,.8);
+}
+.theme-dark .quickMessage-1yeL4E {
+    background-color: transparent;
+    border-color: var(--accent-bg-color);
+    color: hsla(0,0%,100%,.7);
+}
+.theme-dark .topSectionNormal-2-vo2m {
+    background-color: var(--accent-bg-color);
+}
+.theme-dark .body-3ND3kc {
+    background-color: var(--contextual-menu-bg);
+}
+.theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
+    border-color: transparent;
+}
+.connectedAccount-36nQx7 {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: transparent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+#friends .friends-table .friends-row {
+    -ms-flex-direction: row;
+    -webkit-box-direction: initial;
+    -webkit-box-orient: vertical;
+    width: 200px;
+    height: 300px !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    z-index: 100000;
+}
+#friends .friends-table .friends-row .friends-column-name .avatar-small {
+    margin-right: 0;
+    width: 200px;
+    background-size: cover;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+#friends .friends-table .friends-row .discord-tag .username {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: -90px;
+    margin-bottom: -85px;
+    height: 100%;
+}
+#friends .friends-table .friends-row .friends-column+.friends-column {
+    margin-left: 10px;
+}
+#friends .friends-table .friends-row .friends-column-actions {
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding-right: 30px;
+    visibility: hidden;
+}
