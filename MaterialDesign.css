@@ -1,3 +1,4 @@
+
 :root {
     --servers-bar-bg-color: #333333;
     --servers-bar-fg-color: rgba(255,255,255,.3);
@@ -431,7 +432,7 @@ svg[class^="attachButton"] > *{display: none;}
     box-shadow: none;
     contain: layout;
     padding: 0;
-    z-index: 1000000000;
+    z-index: 0;
 }
 #bda-qem {
     border-radius: 5px 5px 0 0;
@@ -866,4 +867,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     background-color: transparent;
     border-color: transparent;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4)
+}
+#bda-qem-twitch-container, #bda-qem-favourite-container {
+    width: 346px;
+    height: 327px;
+    background-color: var(--contextual-menu-bg);
+    border-radius: 0;
 }
