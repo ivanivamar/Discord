@@ -759,3 +759,9 @@ svg[class^="attachButton"] > *{display: none;}
     background-color: transparent;
     border-bottom: 2px solid rgba(255,255,255,0.2);
 }
+.theme-dark .item-1GzJrl {
+    color: #FFF !important;
+}
+.theme-dark .itemSubMenu-1vN_Yn {
+    background: var(--channels-bg-hover-color) url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
+}
