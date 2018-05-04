@@ -7,3 +7,18 @@
 */
 
 @import url(https://cdn.rawgit.com/ivanivamar/Discord/ae40732eb52dac9b6445f243b4a57ede564c14e7/MaterialDesign.css);
+
+:root {
+    --servers-bar-bg-color: #333333;
+    --servers-bar-fg-color: rgba(255,255,255,.3);
+    --channels-bg-color: #262626;
+    --fg-color: rgba(255,255,255,.3);
+    --channels-bg-hover-color: rgba(255,255,255,.05);
+    --channels-selected: #141414;
+    --chat-title-bar-bg: #141414;
+    --chat-bg-color: #2F2F2F;
+    --chat-form-bg-color: #3B3B3B;
+    --users-sidebar: #262626;
+    --contextual-menu-bg: #444444;
+    --accent-bg-color: #7883D5;
+}
