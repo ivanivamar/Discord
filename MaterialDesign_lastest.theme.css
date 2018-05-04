@@ -1,11 +1,9 @@
 //META{"name":"Material Design","description":"Dark green MD theme for discord","author":"Kast","version":"1.0"}*//
 /*
 ///////////////////////////////////////
-
 - Material Design Discord Theme -
 - made from scratch by Kast     -
-
 ///////////////////////////////////////
 */
 
-@import url(https://rawgit.com/ivanivamar/Discord/master/MaterialDesign.css);
+@import url(https://cdn.rawgit.com/ivanivamar/Discord/ae40732eb52dac9b6445f243b4a57ede564c14e7/MaterialDesign.css);
